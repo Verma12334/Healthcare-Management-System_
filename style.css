@@ -1,0 +1,390 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding-top: 200px;
+}
+
+/* ----------------- Header styling ------------- */
+header {
+    background-color: #009688;
+    color: #fff;
+    padding: 1em 0; /* Existing padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 0.2em;
+}
+
+.navbar {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.navbar a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+.appointment-button {
+    background-color: #00796b;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.appointment-button:hover {
+    background-color: #004d40;
+}
+
+/* ---------- Footer styling ---------------- */
+footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    height: 100px;
+    z-index: 1000;
+}
+
+/* -------------- index page --------------------- */
+.hero {
+    margin-top: -8.5rem;
+    position: relative;
+    width: 100%;
+    height: 610px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: -1;
+}
+
+.hero-slideshow img.active {
+    opacity: 1;
+}
+
+.hero-content .content {
+    display: none; /* Hide content by default */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    transition: opacity 1s ease;
+}
+
+.hero-content .content.active {
+    display: block; /* Show active content */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #009688;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+.cta-button {
+    padding: 0.8em 2em;
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: #004d40;
+}
+.key-features {
+    display: flex;            /* Make it a flex container */
+    gap: 0;                   /* Remove or reduce space between items */
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center;      /* Center items vertically if needed */
+}
+
+.key-single {
+    height: 80px;
+    flex: 1;                  /* Ensure each item takes equal space */
+    padding: 20px;            /* Adjust padding as needed */
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    color: white;
+    background-color: #06B2B6;
+}
+
+.key-color-2 {
+    background-color: #008F93;
+}
+
+.treatments {
+    padding: 2em;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    margin-bottom: 12em;
+}
+
+.treatments h2 {
+    color: #009688;
+    margin-bottom: 1em;
+}
+
+.treatment-grid {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.treatment-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+}
+
+.treatment-card img {
+    max-width: 50px;
+    margin-bottom: 0.5em;
+}
+
+/* ---------------- login page ----------- */
+.login-form-admin {
+    margin-top: -45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 23.5rem;
+    margin-left: 40rem;
+    
+}
+.login-form-patient {
+    margin-top: -42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 18.5rem;
+    margin-left: 42rem;
+    
+}
+
+.login-form-doctor {
+    margin-top: -50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 26.5rem;
+    margin-left: 10rem;
+    
+}
+.login-form-nurse{
+    margin-top: -47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 23.5rem;
+    margin-right: 55rem;
+    
+}
+.login-form-staff{
+    margin-top: -47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 23.5rem;
+    margin-left: 45rem;
+    
+}
+
+.login-form {
+    /* background: white; */
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 300px;
+}
+
+.login-form h1 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: white;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid purple;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.login-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.login-form button {
+    width: 48%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button[type="submit"] {
+    /* background-color: #4CAF50; */
+    color: white;
+    border: 1px solid #4CAF50;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.login-form button[type="button"] {
+    /* background-color: #f44336; */
+    color: white;
+    border: 1px solid #f44336;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button[type="button"]:hover {
+        background-color: #d32f2f;
+        transform: scale(1.05);
+}
+
+.login-form p {
+    margin-bottom: 1rem;
+}
+
+/* ------------- patient profile  ------------------ */
+.patient-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin-top: -7rem;
+}
+/* Left section styling */
+.left-panel {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin-right: 20px;
+}
+.left-panel h2 {
+    color: #333;
+}
+.left-panel p {
+    line-height: 1.6;
+    color: #555;
+}
+/* Right section styling */
+.right-panel {
+    width: 80%;
+}
+.patient-container .section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.patient-container .section h3 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.admin-login{
+    margin-top: -12rem;
+}
+.patient-login{
+    margin-top: -25rem;
+}
+
+.admin-page{
+    margin-top: -8rem;
+}
+
+

@@ -1,0 +1,107 @@
+<style>
+.appointment {
+    padding: 30px;
+    padding-bottom: 0px;
+    background-image: url(Photos/appointment_bg.webp);
+    background-size: 100%;
+    margin-top: 30px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.appointment .appoinment-box {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #FFF;
+    padding: 50px 35px;
+    width: 75%;
+    text-align: center;
+    max-width: 400px;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.appointment .small-titlle {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F3F3F3;
+}
+.appointment .appointment-fields {
+    margin-top: 15px;
+}
+.col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+ }
+.d-md-block {
+        display: block !important;
+    }
+    .appointment .appointment-img img {
+        width: 90%;
+        margin-top: -75px;
+    }
+</style>
+
+<div class="appointment">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="appoinment-box">
+                    <div class="row small-titlle no-padding">
+                        <h3>Appointment</h3>
+                        <p>Book an Appointment now we are here for you</p>
+                    </div>
+                    <div class="row no-paadding appointment-fields">
+                        <div class="col-sm-6">
+                            <input placeholder="Your Name" type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-sm-6">
+                            <input placeholder="Your Phone" type="text" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row no-paadding appointment-fields">
+                        <div class="col-sm-6">
+                            <input placeholder="Your Mail" type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-sm-6">
+                            <input placeholder=" Date" type="text" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row no-paadding appointment-fields">
+                        <div class="col-sm-6">
+                            <input placeholder="City" type="text" class="form-control form-control-sm">
+                        </div>
+                        <div class="col-sm-6">
+                            <input placeholder="State" type="text" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row no-paadding appointment-fields">
+                        <div class="col-sm-12">
+                            <div class="btn btn-sm btn-success">Book an Appointment</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 d-none d-md-block d-lg-block  appointment-img">
+                <img src="Photos/woman-doctor.webp" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+

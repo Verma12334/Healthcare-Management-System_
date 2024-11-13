@@ -1,0 +1,114 @@
+
+Problem Recognition
+
+Healthcare is the most critical aspect of our society, and many healthcare providers
+face challenges to offer practical and active services to patients. Considering the
+strength of our IITG including students, faculty, and staff, many people enter and exit
+the hospital in a day, and maintaining their records safely is tedious yet important.
+To reduce this type of burden and to manage the financial, administration, and
+clinical aspects, the Health Care Management System came into existence.
+
+The implementation of HMS in our IITG Hospital will enable it to make decisions
+about the way they’re run, and the work they perform which will in turn help us treat
+patients in a better way, access their real-time reports, and other information, their
+past clinical data and more can be done quickly which will lead to best patient
+outcomes.
+
+
+
+Importance of having this system
+
+   ● Efficiency: Think of how many people per day visit our hospital. All this data
+     must be reported in detail for effective use in a healthcare database. To
+     ensure data is optimally recorded, a healthcare database must be
+     well-designed and simple while supporting in-depth information. Data
+     processing must also be efficient in these databases, so healthcare
+     professionals can quickly and easily access relevant information when
+     necessary.
+
+
+   ● Healthcare Quality Assessment: Improvement in anything is always
+     dependent on careful observation and deep analysis of the present structure
+     of that thing. Through this system, we can consider factors such as access to
+     pertinent information, availability and affordability of services, use of
+     innovation, and barriers to seeking healthcare which will help decision-makers
+     to deeply understand the quality of ongoing healthcare operations.
+
+
+   ● Tracking and Monitoring: With help from this system, medical professionals
+     can use reporting and logging tools to keep track of operations. This helps
+     them monitor ongoing health care services and improve the quality of patient
+     care—by gaining statistics on costs, pervasive diseases, and appropriate
+     treatments, medical staff can more easily provide patients with confident,
+     efficient treatments.
+     
+     
+Evaluation and Synthesis
+
+The portal includes:
+   ● Registering a patient on the portal.
+   ● Maintaining the medical record for each patient.
+   ● Maintaining patient’s diagnosis details, prescription, tests taken, bills paid, and
+      medicine(s)
+   ● Keeping patients’ records up to date and storing their records in the system
+      for future purposes.
+   ● Maintaining employee details which consist of details of doctors, staff and nurses.
+   ● Setting up a patient's medical appointment.
+
+Interfaces include:
+    ● A Login screen for entering user id, password, and role (admin or patient or
+       any employee). Access to further screens is based on the role of the user as
+       they differ from role to role.
+    ● A Home Page showing the complete statistics of HMS and contains links to
+       other pages of the portal.
+    ● A Patient Registration Form to register a new patient into the system.
+    ● A Medical Report which acts the same as the medical booklet of our hospital,
+       containing the details of the patient, bills paid, tests were taken, method of
+       diagnosis and prescription of the patient in any past or present issues.
+       
+       
+Explanation of ER Diagram
+
+   ● Each patient is identified by a unique identifying id i.e patient id, name,
+     gender, email, date of birth, phone no, hostel, age, blood group, arrival date recorded.
+   ● Each room is uniquely identified by room id.
+   ● Each employee is uniquely identified by employee id, name, email, phone no,
+       date of birth, age, address, joining date, work experience, gender.
+   ●   An employee can be either a doctor, a nurse or staff member.
+   ●   Furthermore, for each doctor, specialisation and qualification are recorded.
+   ●   For each nurse, qualification is recorded.
+   ●   For each staff member, type is recorded.
+   ●   For each nurse, the patient count is recorded.
+   ●   There are several medicines available at the hospital. Each medicine is
+       identified by its name, cost, and company.
+   ●   A patient can avail of tests available at the hospital. Tests are uniquely
+       identified by test id, name, and cost.
+   ●   Each patient is assigned to a doctor. A patient can be assigned to several
+       doctors and a doctor can be assigned to several patients.
+   
+   
+Logical Database Requirements
+
+The proposed information system contains the following data tables in its database
+collection
+
+   ●   Patient
+   ●   Employee
+   ●   Doctor
+   ●   Nurse
+   ●   Staff
+   ●   Tests
+   ●   Medicine
+   ●   Room
+   ●   Bill
+   ●   Appointment
+   ●   Prescription
+
+
+   
+References
+
+  ● Hospital Management System, International Research Journal of Engineering
+    and Technology (IRJET), Volume-07, Issue-04, April 2020
+  ● A Web-Based Hospital Management System For Iganga District Hospital,
+    Uganda, Vol-06, Issue-05, 2020
