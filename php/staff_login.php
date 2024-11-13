@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
    session_start(); // Start the session at the beginning
 
     require_once 'connect.php';
@@ -9,7 +9,7 @@
         header("Location: staff_profile.php");
         exit();
     }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

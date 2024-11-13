@@ -33,14 +33,14 @@
 </header>
 <!-- <------------------------------------------php---------------------------------------------------------- -->
 <?php
-session_start(); // Start the session at the beginning
+// session_start(); // Start the session at the beginning
 
-// Check if the user is already logged in
-if (isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-  // Redirect to the admin page if already logged in
-  header("Location: admin_login.php");
-  exit();
-}
+// // Check if the user is already logged in
+// if (isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+//   // Redirect to the admin page if already logged in
+//   header("Location: admin_login.php");
+//   exit();
+// }
 
 require_once 'connect.php';
 		
@@ -68,7 +68,7 @@ require_once 'connect.php';
 
 
       <img class="w-14 h-14 mt-2 pl-2"
-        src="../Photos/logo.png" alt="">
+        src="../Photos/iitglogo.png" alt="">
       <h6 class="pt-4 pl-2 text-black font-semibold">Welcome to IITG <br>Hospital Portal</h6>
 
     </a>

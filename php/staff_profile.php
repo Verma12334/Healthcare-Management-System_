@@ -1,13 +1,13 @@
 <?php
-    session_start(); // Start the session at the beginning
+    // session_start(); // Start the session at the beginning
 
-    // Check if the user is already logged in
-    if (isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    // Redirect to the admin page if already logged in
-    header("Location: staff_login.php");
-    exit();
-    }
-    
+    // // Check if the user is already logged in
+    // if (isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    // // Redirect to the admin page if already logged in
+    // header("Location: staff_login.php");
+    // exit();
+    // }
+
    require_once 'connect.php';
      $email="";
      $password="";
